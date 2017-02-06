@@ -1,7 +1,7 @@
 /*This program uses random variables to insert the elements of the array. 
 If you want to see the result, uncomment the commented lines. */
 
-#includ <iostream>
+#include <iostream>
 #include <ctime>
 #include <stdlib.h>
 

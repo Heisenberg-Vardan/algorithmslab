@@ -34,7 +34,7 @@ class Bubble
 			//cout<<"Put the elements in: " <<endl;
 			
 			for(i=0; i<size; i++)
-				a[i] = rand() % 100;
+				a[i] = rand() % 100; // Generating random numbers between 0 to 99 and assigning it to array.
 		}
 		
 		void bubbleSort()

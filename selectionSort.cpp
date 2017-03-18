@@ -41,8 +41,8 @@ class Selection
 					if(a[j] < a[min])
 						min = j;
 				}
-				
-				if(min != i)
+//call the swap function only when it is required. Omitting this condition takes up space in the stack and increases computation time.
+				if(min != i)	//optional condition
 					swap(a[min], a[i]);
 		
 			} // end outer for	

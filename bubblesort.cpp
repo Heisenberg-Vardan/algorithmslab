@@ -12,7 +12,7 @@ class Bubble
 	int size;
 	int a[200000];
 	public:
-		Bubble()
+		Bubble()		//constructor to get the size at the time of creating the object
 		{
 			cout<<"Enter the size: ";
 			cin >> size;	
@@ -37,6 +37,7 @@ class Bubble
 				a[i] = rand() % 100; // Generating random numbers between 0 to 99 and assigning it to array.
 		}
 		
+	//Algorithm for bubble sort.
 		void bubbleSort()
 		{
 			int i,j;

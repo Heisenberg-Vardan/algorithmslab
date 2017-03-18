@@ -16,7 +16,7 @@ class Selection
 			cin>>size;
 		}
 		
-		
+		//generating random numbers from 0 to 99.
 		void getElements()
 		{
 			for(int i=0; i<size; i++)
@@ -25,7 +25,8 @@ class Selection
 			}
 		}
 
-
+	
+		//selection sort algorithm
 		void selectionSort()
 		{
 			int i,j;
@@ -47,7 +48,8 @@ class Selection
 			} // end outer for	
 		}	
 
-
+	
+		//swapping two numbers
 		void swap(int &x, int &y)
 		{
 			int temp;
@@ -55,7 +57,9 @@ class Selection
 			x=y;
 			y=temp;
 		}
-
+	
+		//display in the case of test output
+		//You need to make a call to this function.
 		void display()
 		{
 			for(int i=0; i<size; i++)
@@ -72,12 +76,12 @@ int main()
 	clock_t start,end;
 	double total_time;
 	
-	start=clock();
+	start=clock();		//get the time just before the algorithm starts
 	obj.selectionSort();
-	end = clock();
+	end = clock();		//get the time just after the algorithm ends
 
 	
-	total_time = (double)(end - start)/(CLOCKS_PER_SEC);
+	total_time = (double)(end - start)/(CLOCKS_PER_SEC);	
 	
 	cout<<endl<<"The time taken is " << total_time << "seconds."<<endl;
 	

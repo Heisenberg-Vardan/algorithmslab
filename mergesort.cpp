@@ -10,7 +10,7 @@ using namespace std;
 void merge(int a[], int low, int middle, int high)
 {
 	int i,j,k;
-	int b[50000];
+	int b[500000];
 	i=low; k=low; j=middle+1;
 
 	//compare the two arrays 
@@ -70,7 +70,7 @@ void display(int a[], int size)
 
 int main()
 {
-	int a[50000];
+	int a[500000];
 	int low, middle, high;
 	int size;	
 	clock_t start,end;

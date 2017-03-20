@@ -14,12 +14,21 @@ int max(int a, int b)
 void warshal(int r[10][10],int n)
 {
 	int i,j,k;
-	for(k=1;k<=n;k++)
- 		for(i=1;i<=n;i++)
-  			for(j=1;j<=n;j++)
+	for(i=1;i<=n;i++)
+ 		for(j=1;j<=n;j++)
+  			for(k=1;k<=n;k++)
    				r[i][j] = max(r[i][j],r[i][k]&&r[k][j]);
-}
 
+   	cout<<"Transitive closure"<<endl;
+
+	for(int i=1;i<=n;i++)
+	{
+ 		for(int j=1;j<=n;j++)
+ 		{
+  			cout<<r[i][j];
+ 		}
+ 		cout<<endl;
+ 	}
 
 
 int main()
@@ -35,15 +44,6 @@ int main()
 			cin>>r[i][j];
 
 	warshal(r,n);
-	cout<<"Transitive closure"<<endl;
 
-	for(i=1;i<=n;i++)
-	{
- 		for(j=1;j<=n;j++)
- 		{
-  			cout<<r[i][j];
- 		}
- 		cout<<endl;
- 	}
 
 }

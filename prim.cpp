@@ -85,3 +85,30 @@ int main()
 	return 0;
 
 }
+
+
+/* THE OUTPUT 
+
+Enter the number of nodes: 6
+Enter the weighted adjacency matrix: 
+0 3 999 999 6 5
+3 0 1 999 999 4
+999 1 0 6 999 4
+999 999 6 0 8 5
+6 999 999 8 0 2
+5 4 4 5 2 0 
+Enter the index of source node: 
+0
+Number of edges = 1
+0->1 = 3
+Number of edges = 2
+1->2 = 1
+Number of edges = 3
+1->5 = 4
+Number of edges = 4
+5->4 = 2
+Number of edges = 5
+5->3 = 5
+Minimum Cost = 15
+	
+	*/

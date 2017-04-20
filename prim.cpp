@@ -42,13 +42,15 @@ void prim(int numberOfNodes,int W[20][20])
 		{
 			for(int j=0; j<numberOfNodes; j++)
 			{
-				if(W[i][j] < min)
+				if(W[i][j] < min)	// if the weight of node is less than the minimum 
 				{
-					if(visited[i] == 0)
-						continue;
-					else
+					if(visited[i] == 0) // if the node is not already visited 
+						continue; //go back to the inner for loop(j) and continue the iteration
+							//without executing the next statement that is else block.
+					
+					else // if there occours a visited node(Starts with source as visited[source] = 1
 					{
-						min = W[i][j];
+						min = W[i][j]; // assign new minimum and repeat the process till all nodes are visited
 						a = u = i;
 						b = v = j;
 					} // end of else for inner if
@@ -56,15 +58,15 @@ void prim(int numberOfNodes,int W[20][20])
 			}// end of inner for loop
 		} // end of outer for loop
 
-		if(visited[u]==0 || visited[v]==0)
+		if(visited[u]==0 || visited[v]==0)	//While there are still un-visited nodes, print the min weight
 		{
 			cout << "Number of edges in created tree vertices= " << numberOfEdges++<<endl;
 			cout << a << "->" << b << " = " << min <<endl;
 			min_cost = min_cost + min;
-			visited[b] = 1; 
+			visited[b] = 1;  // Change the status at index b=v=j to visited.
 		}
 
-		W[a][b] = W[b][a] = 999;
+		W[a][b] = W[b][a] = 999; //The vertices already printed(added to tree vertices) need not be visited again.
 			
 	} // end of while
 

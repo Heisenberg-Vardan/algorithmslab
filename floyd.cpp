@@ -57,5 +57,25 @@ int main()
 	get_matrix(n, W);
 	floyd(n, W);
 	display(n, W);
-
+	
+	return 0;
 }
+
+
+
+/* OUTPUT
+
+Enter the number of nodes. 
+4
+Enter adjacency matrix: 
+0 999 3 999
+2 0 999 999
+999 7 0 1
+6 999 999 0
+All pairs shortest path: 
+0	10	3	4	
+2	0	5	6	
+7	7	0	1	
+6	16	9	0
+
+*/

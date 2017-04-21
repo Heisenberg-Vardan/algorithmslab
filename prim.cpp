@@ -18,7 +18,7 @@ void get_matrix(int numberOfNodes,int W[20][20])
 void prim(int numberOfNodes,int W[20][20])
 {
 	int source;
-	int min, min_cost;
+	int min, min_cost=0;
 	int visited[20]; //Create a new array visited[] and assign all the values 
 	int a,b,u,v;
 	int numberOfEdges = 1;

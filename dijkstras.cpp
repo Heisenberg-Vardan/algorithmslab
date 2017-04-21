@@ -28,7 +28,7 @@ void dijkstras(int n, int W[20][20])
 	for(int i=0; i<n; i++)
 	{
 		visited[i]=0;
-	    distance[i]=W[source][i];
+	    	distance[i]=W[source][i];
 	}
 
 	visited[source] = 1;
@@ -104,5 +104,8 @@ shortest path from 0 to 3 is 5
 
 shortest path from 0 to 4 is 9
 
+
+Time Complexity of the implementation is O(V^2). 
+If the input graph is represented using adjacency list, it can be reduced to O(E log V) with the help of binary heap.
 
 */

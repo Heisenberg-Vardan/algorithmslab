@@ -76,18 +76,33 @@ int main()
 	cout << "Enter the number of vertices: " << endl;
 	cin >> n;
 
-	/*Example graph : 
-	
-					4
-				b______c
-			3 /	 \2		\6
-			 /	  \		 \
-			a______d_____e
-				7	  4
-	
-	*/
-
 	get_matrix(n,W);
 	dijkstras(n, W);
 
 }
+
+
+/* OUTPUT 
+
+
+Enter the number of vertices: 
+5
+Enter the weighted adjacency matrix 
+0 3 999 7 999
+3 0 4 2 999
+999 4 0 5 6
+7 2 5 0 4
+999 999 6 4 999
+Enter the source node Index: 
+0
+
+shortest path from 0 to 1 is 3
+
+shortest path from 0 to 2 is 7
+
+shortest path from 0 to 3 is 5
+
+shortest path from 0 to 4 is 9
+
+
+*/

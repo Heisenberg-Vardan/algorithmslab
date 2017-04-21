@@ -66,7 +66,7 @@ void dijkstras(int n, int W[20][20])
 	for(int i=0; i<n; i++)
 		if(i!=source)
   			cout<<"\nshortest path from " 
-  				<<source <<" to "<< i << " is " << distance[i] << endl;
+  			    <<source <<" to "<< i << " is " << distance[i] << endl;
 }
 
 int main()

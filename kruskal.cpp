@@ -71,3 +71,29 @@ int main()
 
 	return 0;
 }
+
+
+/* OUTPUT
+
+Enter the numer of vertices: 6
+Enter the matrix: 
+0 3 999 999 6 5
+3 0 1 999 999 4
+999 1 0 6 999 4
+999 999 6 0 8 5
+6 999 999 8 0 2
+5 4 4 5 2 0 
+Number of edges : 1
+1->2 = 1
+Number of edges : 2
+4->5 = 2
+Number of edges : 3
+0->1 = 3
+Number of edges : 4
+1->5 = 4
+Number of edges : 5
+0->5 = 5
+Minimum cost = 15
+
+
+*/

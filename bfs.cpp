@@ -61,3 +61,33 @@ int main()
 }
 
 
+
+/* OUTPUT 
+
+Ashwanis-MacBook-Air:~ Ashwani$ ./a.out
+ Enter number of vertices: 10
+Enter adjacency matrix 
+0 0 1 1 1 0 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0
+1 0 0 1 0 1 0 0 0 0
+1 0 1 0 0 0 0 0 0 0
+1 1 0 0 0 1 0 0 0 0
+0 1 1 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 1 0 1
+0 0 0 0 0 0 1 0 1 0 
+0 0 0 0 0 0 0 1 0 1
+0 0 0 0 0 0 1 0 1 0
+ Enter the source node: 1
+Node 1 is reachable. 
+Node 2 is reachable. 
+Node 3 is reachable. 
+Node 4 is reachable. 
+Node 5 is reachable. 
+Node 6 is reachable. 
+Node 7 is not reachable. 
+Node 8 is not reachable. 
+Node 9 is not reachable. 
+Node 10 is not reachable.
+
+
+*/

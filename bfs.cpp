@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-void BFS(int[20][20],int,int[20],int);
 
 void get_matrix(int n, int W[20][20])
 {

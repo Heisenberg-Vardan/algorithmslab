@@ -45,7 +45,7 @@ int main()
                         min_cost=min_cost+min; 
                         parent[v]=u; 
                 } 
-                cost[a][b]=cost[a][b]=999; 
+                cost[a][b]=cost[b][a]=999; 
         } 
         cout<<"\nmin_cost=\n"<<min_cost; 
         return 0; 

@@ -1,4 +1,3 @@
-//A better program will be uploaded soon.
 
 
 #include<iostream>

@@ -1,5 +1,3 @@
-
-
 #include<iostream>
 using namespace std;
  
@@ -18,7 +16,7 @@ void knapsack(int m,int n,int w[],int p[])
         for(i=0;i<=m;i++) 
                 v[0][i]=0;  
  
-        for(i=1;i<=n;i++) 
+        for(i=0;i<=n;i++) 
         { 
                  for(j=0;j<=m;j++) 
                  { 
@@ -29,7 +27,7 @@ void knapsack(int m,int n,int w[],int p[])
                 } 
         } 
  
-        for(i=1;i<=n;i++) 
+        for(i=0;i<=n;i++) 
                 x[i]=0; 
  
         i=n; 
@@ -45,7 +43,7 @@ void knapsack(int m,int n,int w[],int p[])
         } 
  
         cout<<"\nThe optimal set of items is:\n"; 
-        for(i=1;i<=n;i++) 
+        for(i=0;i<=n;i++) 
         { 
                  if(x[i]==1) 
                  { 

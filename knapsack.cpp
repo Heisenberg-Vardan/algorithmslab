@@ -17,10 +17,7 @@ void knapsack(int m,int n,int w[],int p[])
         int v[100][200],x[10],i,j,sum=0; 
  
         for(i=0;i<=m;i++) 
-                v[0][i]=0; 
- 
-        for(i=0;i<=m;i++) 
-                v[0][i]=0; 
+                v[0][i]=0;  
  
         for(i=1;i<=n;i++) 
         { 

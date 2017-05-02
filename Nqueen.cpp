@@ -83,3 +83,24 @@ int main()
 	cin >> n;
     Nqueen(n);
 }
+
+/*OUTPUT
+
+
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ g++ Nqueen.cpp
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ ./a.out
+Enter the number of queens: 
+4
+Solution : 1
+X	Q	X	X	
+X	X	X	Q	
+Q	X	X	X	
+X	X	Q	X	
+Solution : 2
+X	X	Q	X	
+Q	X	X	X	
+X	X	X	Q	
+X	Q	X	X	
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ git checkout -b add
+Switched to a new branch 'add'
+Ashwani@Ashwanis-MacBook-Air algorithmslab (add) $ git add Nqueen.cpp

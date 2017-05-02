@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void get_array(int n, int A[50])
+void get_array(int n, int A[500000])
 {
 	cout<<"Enter " << n << " elements. " << endl;
 
@@ -11,7 +11,19 @@ void get_array(int n, int A[50])
 	}
 }
 
-void print_array(int n, int A[50])
+
+
+void get_array_random(int n, int A[500000])
+{
+	for(int i =0; i<n; i++)
+	{
+		A[i] = rand()%100;
+	}
+}
+
+
+
+void print_array(int n, int A[500000])
 {
 	for(int i=0; i<n; i++)
 	{
@@ -21,7 +33,7 @@ void print_array(int n, int A[50])
 }
 
 
-void heapify(int n, int A[50], int root)
+void heapify(int n, int A[500000], int root)
 {
 	int largest = root;
 	int left = 2*root + 1;
@@ -40,7 +52,7 @@ void heapify(int n, int A[50], int root)
 	}
 }
 
-void heapsort(int n, int A[50])
+void heapsort(int n, int A[500000])
 {
 	for (int i= n/2 - 1; i>=0; i--)
 		heapify(n,A,i);
@@ -57,16 +69,26 @@ void heapsort(int n, int A[50])
 
 int main()
 {
-	int n, A[50];
+	int n, A[500000];
+	clock_t start, end;
+	double total_time;
+
 	cout << "Enter the number of elements: " << endl;
 	cin >> n;
-	get_array(n,A);
 
-	cout<<"Unsorted array: " << endl;
-	print_array(n,A);
+	//get_array(n,A);
+	get_array_random(n,A);
 
+	//cout<<"Unsorted array: " << endl;
+	//print_array(n,A);
+
+	start = clock();
 	heapsort(n,A);
+	end = clock();
 
-	cout<<"Sorted array: " << endl;
-	print_array(n,A);
+	// cout<<"Sorted array: " << endl;
+	// print_array(n,A);
+
+	total_time = (double)(end-start)/CLOCKS_PER_SEC;
+	cout << "Total time taken is " << total_time << endl;
 }

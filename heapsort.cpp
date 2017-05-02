@@ -92,3 +92,33 @@ int main()
 	total_time = (double)(end-start)/CLOCKS_PER_SEC;
 	cout << "Total time taken is " << total_time << endl;
 }
+
+
+/*OUTPUT
+
+Ashwani@Ashwanis-MacBook-Air ~ $ cd Desktop
+Ashwani@Ashwanis-MacBook-Air Desktop $ cd algorithmslab
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ g++ heapsort.cpp
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ ./a.out
+Enter the number of elements: 
+20000
+Total time taken is 0.010048
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ ./a.out
+Enter the number of elements: 
+40000
+Total time taken is 0.016997
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ ./a.out
+Enter the number of elements: 
+60000
+Total time taken is 0.027301
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ ./a.out
+Enter the number of elements: 
+80000
+Total time taken is 0.030228
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ ./a.out
+Enter the number of elements: 
+100000
+Total time taken is 0.033005
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $
+
+*/

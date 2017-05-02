@@ -104,3 +104,4 @@ X	Q	X	X
 Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ git checkout -b add
 Switched to a new branch 'add'
 Ashwani@Ashwanis-MacBook-Air algorithmslab (add) $ git add Nqueen.cpp
+*/

@@ -95,6 +95,23 @@ int main()
 
 
 /*OUTPUT
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ g++ heapsort.cpp
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ ./a.out
+Enter the number of elements: 
+5
+Enter 5 elements. 
+2 7 4 10 3
+Unsorted array: 
+2 7 4 10 3 
+Sorted array: 
+2 3 4 7 10 
+Total time taken is 5e-06
+Ashwani@Ashwanis-MacBook-Air algorithmslab (master) $ 
+
+*/
+
+
+/*OUTPUT
 
 Ashwani@Ashwanis-MacBook-Air ~ $ cd Desktop
 Ashwani@Ashwanis-MacBook-Air Desktop $ cd algorithmslab

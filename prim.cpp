@@ -44,11 +44,8 @@ void prim(int numberOfNodes,int W[20][20])
 			{
 				if(W[i][j] < min)	// if the weight of node is less than the minimum 
 				{
-					if(visited[i] == 0) // if the node is not already visited 
-						continue; //go back to the inner for loop(j) and continue the iteration
-							//without executing the next statement that is else block.
 					
-					else // if there occours a visited node(Starts with source as visited[source] = 1
+					if (visited[i]) // if there occours a visited node(Starts with source as visited[source] = 1
 					{
 						min = W[i][j]; // assign new minimum and repeat the process till all nodes are visited
 						a = u = i;
@@ -90,7 +87,6 @@ int main()
 
 
 /* THE OUTPUT 
-
 Enter the number of nodes: 6
 Enter the weighted adjacency matrix: 
 0 3 999 999 6 5

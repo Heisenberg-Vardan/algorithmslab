@@ -1,4 +1,3 @@
-
 // A Quick implementation of BFS using 
 // vectors and queue 
 #include <bits/stdc++.h> 
@@ -41,7 +40,8 @@ void bfs(int u)
     } 
 } 
   
-// Driver code 
+
+
 int main() 
 { 
     int n, e; 
